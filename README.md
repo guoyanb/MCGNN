@@ -1,7 +1,7 @@
 MCGNN: Multiscale Cross-Type Graph Neural Networks with Wavelet and Fourier Transforms for Direction-Aware
 Gene-Microbe-Disease Association Mining
 
-This repository contains the official implementation of MCGNN, a multiscale cross-type graph neural network for direction-aware gene–microbe–disease association mining. Mining multi-entity associations in heterogeneous
+Mining multi-entity associations in heterogeneous
 biological networks is fundamentally challenged by noise, sparsity, and the difficulty of disentangling directed dependencies from
 spurious correlations. Existing methods typically treat spectral enhancement and directed interaction modeling as separate steps,
 overlooking their complementarity. To bridge this gap, we propose the multiscale cross-type graph neural network (MCGNN), which
@@ -16,7 +16,6 @@ signal energy via Parseval’s identity, and establishes the gradient stability 
 triplet datasets show that MCGNN consistently outperforms state-of-the-art baselines. Ablation studies confirm the indispensable
 and synergistic contributions of wavelet decomposition, Fourier filtering, and directed dependency learning.
 
-File Structure
 File	Description
 cuda_wavelet.py	GPU-accelerated Haar wavelet transform, multi-level decomposition, and first-layer wavelet feature extractor.
 data_process.py	Data loading, negative sampling, and generation of 5-fold CV and independent test splits.
